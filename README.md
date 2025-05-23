@@ -1,69 +1,32 @@
-🧠 AI Research & Content Writing Crew
-A simple but powerful example of using CrewAI with Ollama to create an autonomous agent-based system that performs research on AI and writes content about its impact on the job market.
+# 🤖 AI Research & Content Writing Crew
 
-This project demonstrates how you can build a mini-research-and-content pipeline using LLMs locally via Ollama and CrewAI’s multi-agent framework.
+> **A powerful autonomous agent system using CrewAI + Ollama for AI research and content creation**
 
-🔧 Features
-Autonomous research + writing workflow
-Uses local LLMs via Ollama
-Modular structure with CrewAI agents
-Easy to extend for other topics or use cases
-📦 Requirements
-Before running this script, ensure you have:
+This project demonstrates how to build an **autonomous AI pipeline** using [CrewAI](https://github.com/joaomdmoura/crewai ) and [Ollama](https://ollama.ai ). It leverages local LLMs to perform **research on AI trends** and generate **engaging blog posts** about their impact on the job market.
 
-Python 3.9+
-crewai
-langchain_community
-ollama (running locally)
+Built with ❤️ for developers, entrepreneurs, and AI enthusiasts who want to explore multi-agent systems in real-world scenarios.
+
+---
+
+## 🚀 Features
+
+| Feature | Description |
+|--------|-------------|
+| 🧠 Autonomous Workflow | Two agents work together: one for research, one for writing |
+| 🔐 Local LLM Support | Uses Ollama to run models locally — no API keys or cloud dependency |
+| 🧪 Modular Design | Easy to extend with new agents, tasks, or topics |
+| 📄 Real-World Use Case | Demonstrates AI's impact on jobs — perfect for blogs, reports, or learning |
+
+---
+
+## 📦 Requirements
+
+Make sure you have these installed before running the script:
+
+- 🐍 Python 3.9+
+- 🧰 `crewai`, `langchain_community`, `ollama`
+
 Install dependencies:
 
-bash
-
-
-1
+```bash
 pip install crewai langchain_community ollama
-Note: Make sure the model used (ollama/deepseek-r1:7b) is pulled and available in your local Ollama instance. 
-
-⚙️ Setup Instructions
-1. Start Ollama Server
-Make sure Ollama is running locally:
-
-bash
-
-
-1
-ollama serve
-Pull the required model:
-
-bash
-
-
-1
-ollama pull deepseek-r1:7b
-2. Run the Script
-Save the provided script as main.py, then run:
-
-bash
-
-
-1
-python main.py
-🧪 What It Does
-Research Analyst Agent
-Researches recent developments in AI and their impact on jobs.
-Outputs a structured research summary.
-Content Writer Agent
-Takes the research output and crafts an engaging blog post.
-Maintains clarity, tone, and relevance for readers.
-Crew Workflow
-Orchestrates both agents sequentially.
-Returns a final report ready for publishing or further processing.
-🧩 Customization Ideas
-You can easily adapt this project for various purposes:
-
-Change the topic of research (e.g., climate change, crypto, robotics)
-Add more agents (e.g., editor, fact-checker)
-Export output to Markdown or HTML
-Integrate into a web app or automation pipeline
-📝 License
-MIT License – see LICENSE for details.
